@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>银行家算法</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>银行家算法管理系统</h1>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>进程</th>
+                <th>Max</th>
+                <th>Allocation</th>
+                <th>Need</th>
+                <th>Available</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>P0</th>
+                <td>7 5 3</td>
+                <td>0 1 0</td>
+                <td>7 4 3</td>
+                <td>3 3 2</td>
+            </tr>
+            <tr>
+                <th>P1</th>
+                <td>3 2 2</td>
+                <td>2 0 0</td>
+                <td>1 2 2</td>
+            </tr>
+            <tr>
+                <th>P2</th>
+                <td>9 0 2</td>
+                <td>3 0 2</td>
+                <td>6 0 0</td>
+            </tr>
+            <tr>
+                <th>P3</th>
+                <td>2 2 2</td>
+                <td>2 1 1</td>
+                <td>0 1 1</td>
+            </tr>
+            <tr>
+                <th>P4</th>
+                <td>4 3 3</td>
+                <td>0 0 2</td>
+                <td>4 3 1</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="request">
+        <div class="requestProcess">
+            <span>请求资源的进程：</span>
+            <select name="process" id="process">
+                <option value="0"></option>
+                <option value="1">P0</option>
+                <option value="2">P1</option>
+                <option value="3">P2</option>
+                <option value="4">P3</option>
+                <option value="5">P4</option>
+            </select>
+        </div>
+        <div class="requestResource">
+            <span>请求的资源：</span>
+            <form name="resource">
+                <input type="text" id="resource1" name="box1" value="" class='res'/>
+                <input type="text" id="resource2" name="box2" value="" class='res'/>
+                <input type="text" id="resource3" name="box3" value="" class='res'/>
+                <button class='btn'>确定</button>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
